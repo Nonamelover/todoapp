@@ -20,9 +20,9 @@ export class TodoService {
   constructor(private http:HttpClient) { }
 
   // getTodos
-  getTodos(): Observable<Todo[]> {
-    return this.http.get<Todo[]>(`${this.todosUrl}${this.todosLimit}`);
-  }
+  // getTodos(): Observable<Todo[]> {
+  //   return this.http.get<Todo[]>(`${this.todosUrl}${this.todosLimit}`);
+  // }
 
   // delete todo
   deleteTodo(todo: Todo): Observable<Todo>{
